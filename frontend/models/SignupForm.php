@@ -52,19 +52,19 @@ class SignupForm extends Model
             ['alamat', 'string', 'max' => 255],
 
             ['date_of_birth', 'required'],
-            ['date_of_birth', 'date'],
+            ['date_of_birth', 'string'],
 
             ['membership_type', 'required'],
             ['membership_type', 'string', 'max' => 255],
             
             ['credit_card_number', 'required'],
-            ['credit_card_number', 'integer', 'max' => 16],
+            ['credit_card_number', 'integer'],
 
             ['credit_card_expiration_date', 'required'],
-            ['credit_card_expiration_date', 'date'],
+            ['credit_card_expiration_date', 'string'],
 
             ['credit_card_cvv', 'required'],
-            ['credit_card_cvv', 'integer', 'max' => 3],
+            ['credit_card_cvv', 'integer'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],

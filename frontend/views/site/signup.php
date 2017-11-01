@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'vip' => 'VIP',
                         'vvip' => 'VVIP',
                         ]);  ?>
-                <?= $form->field($model, 'credit_card_number')->widget(CreditCardNumber::className()) ?>
+                <?= $form->field($model, 'credit_card_number')->textInput(['maxLenght'=> 16])->widget(CreditCardNumber::className()) ?>
                 <?= $form->field($model, 'credit_card_expiration_date')->widget(CreditCardExpiry::className()) ?>
                 <?= $form->field($model, 'credit_card_cvv')->widget(CreditCardCVCode::className()) ?>
                 <div class="form-group">

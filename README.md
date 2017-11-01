@@ -14,4 +14,4 @@ update composer in cmd
 composer update
 ```
 
-see the signup for details
+see the signup menu for details
